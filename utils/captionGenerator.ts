@@ -158,6 +158,106 @@ export const generateCaptions = (
       `Orange Legendary Drop! 🧡\n\n${content}\n\n${hashtags}`,
       `Best loot in the dungeon. 🗝️\n\n${content}\n\n${hashtags}`,
     ];
+  } else if (template === "tube") {
+    return [
+      `SHOCKING REVELATION! (GONE WRONG) 😱\n\n${content}\n\n${hashtags}`,
+      `I can't believe I'm posting this... 🎥\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "clown") {
+    return [
+      `Dropped my license, has anyone seen it? 🤡\n\n${content}\n\n${hashtags}`,
+      `Professional Clown Activity. 🎪\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "chat") {
+    return [
+      `Left on read. 📱\n\n${content}\n\n${hashtags}`,
+      `Group chat leaked. 💬\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "quote") {
+    return [
+      `So inspiring. 🙌\n\n${content}\n\n${hashtags}`,
+      `Live, Laugh, L. ✨\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "stream") {
+    return [
+      `Are you still watching? 📺\n\n${content}\n\n${hashtags}`,
+      `New Season Drop. 🎬\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "credit") {
+    return [
+      `Card Declined at the Logic Store. 💳\n\n${content}\n\n${hashtags}`,
+      `Insufficient Funds (for this take). 💸\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "captcha") {
+    return [
+      `Please prove you are human. 🤖\n\n${content}\n\n${hashtags}`,
+      `I failed the test. ❌\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "wrapped") {
+    return [
+      `My Year in Review: Embarrassing. 🎁\n\n${content}\n\n${hashtags}`,
+      `Top Genre: Bad Takes. 🎵\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "billboard") {
+    return [
+      `Public Service Announcement. 📢\n\n${content}\n\n${hashtags}`,
+      `Renting this space to say... 🏗️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "alert") {
+    return [
+      `PRESIDENTIAL ALERT. ⚠️\n\n${content}\n\n${hashtags}`,
+      `This is not a drill. 🚨\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "notes") {
+    return [
+      `Screenshotted because this is important. 📝\n\n${content}\n\n${hashtags}`,
+      `My official statement. 📋\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "aura") {
+    return [
+      `The vibes are immaculate. ✨\n\n${content}\n\n${hashtags}`,
+      `Aura points +1000. 🔮\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "impact") {
+    return [
+      `Statement piece. ‼️\n\n${content}\n\n${hashtags}`,
+      `BOLD AND LOUD. 🔴\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "terminal") {
+    return [
+      `Hacking the mainframe... 💻\n\n${content}\n\n${hashtags}`,
+      `System Override. 🟢\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "paper") {
+    return [
+      `From the archives. 🗄️\n\n${content}\n\n${hashtags}`,
+      `Classified documents leaked. 📄\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "neon") {
+    return [
+      `Up all night. 🌃\n\n${content}\n\n${hashtags}`,
+      `Glowing different. 💡\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "board") {
+    return [
+      `Class is in session. 🏫\n\n${content}\n\n${hashtags}`,
+      `Take notes. ✏️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "cinema") {
+    return [
+      `Now Showing: The Truth. 🎥\n\n${content}\n\n${hashtags}`,
+      `Coming soon to a timeline near you. 🍿\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "sign") {
+    return [
+      `Someone had to say it. 🪧\n\n${content}\n\n${hashtags}`,
+      `Change my mind. 🗣️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "lock") {
+    return [
+      `Check your notifs. 🔔\n\n${content}\n\n${hashtags}`,
+      `Missed call: Reality. 📱\n\n${content}\n\n${hashtags}`,
+    ];
   } else {
     // Clean/Viral
     return [

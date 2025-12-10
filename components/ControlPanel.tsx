@@ -125,7 +125,63 @@ export default function ControlPanel({
             </div>
           </div>
 
-          {/* Gaming */}
+          {/* Typography Collection */}
+          <div>
+            <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
+              Viral Typography
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                "notes",
+                "aura",
+                "impact",
+                "terminal",
+                "paper",
+                "neon",
+                "board",
+                "cinema",
+                "sign",
+                "lock",
+              ].map((t) => (
+                <TemplateButton
+                  key={t}
+                  id={t}
+                  active={activeTemplate}
+                  onClick={setActiveTemplate}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Meme & Social Trend Collection */}
+          <div>
+            <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
+              Meme & Trends
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                "tube",
+                "clown",
+                "chat",
+                "quote",
+                "stream",
+                "credit",
+                "captcha",
+                "wrapped",
+                "billboard",
+                "alert",
+              ].map((t) => (
+                <TemplateButton
+                  key={t}
+                  id={t}
+                  active={activeTemplate}
+                  onClick={setActiveTemplate}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Gaming Collection */}
           <div>
             <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
               Gaming Collection

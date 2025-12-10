@@ -72,14 +72,6 @@ export const LootDropCard: React.FC<PhotocardTemplateProps> = ({
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-4 flex gap-2 text-[#ff8000] animate-bounce">
-        <Sparkles size={16} />{" "}
-        <span className="text-xs font-bold font-sans uppercase">
-          Press F to Pickup
-        </span>{" "}
-        <Sparkles size={16} />
-      </div>
     </div>
   );
 };

@@ -34,6 +34,26 @@ import { InventoryCard } from "./templates/InventoryCard";
 import { RtsTooltipCard } from "./templates/RtsTooltipCard";
 import { VsScreenCard } from "./templates/VsScreenCard";
 import { LootDropCard } from "./templates/LootDropCard";
+import { TubeCard } from "./templates/TubeCard";
+import { ClownCard } from "./templates/ClownCard";
+import { ChatCard } from "./templates/ChatCard";
+import { QuoteCard } from "./templates/QuoteCard";
+import { StreamCard } from "./templates/StreamCard";
+import { CreditCard } from "./templates/CreditCard";
+import { CaptchaCard } from "./templates/CaptchaCard";
+import { WrappedCard } from "./templates/WrappedCard";
+import { BillboardCard } from "./templates/BillboardCard";
+import { AlertCard } from "./templates/AlertCard";
+import { NotesCard } from "./templates/NotesCard";
+import { AuraCard } from "./templates/AuraCard";
+import { ImpactCard } from "./templates/ImpactCard";
+import { TerminalCard } from "./templates/TerminalCard";
+import { PaperCard } from "./templates/PaperCard";
+import { NeonCard } from "./templates/NeonCard";
+import { BoardCard } from "./templates/BoardCard";
+import { CinemaCard } from "./templates/CinemaCard";
+import { SignCard } from "./templates/SignCard";
+import { LockScreenCard } from "./templates/LockScreenCard";
 import { generateCaptions } from "@/utils/captionGenerator";
 
 interface PreviewSectionProps {
@@ -138,6 +158,46 @@ export default function PreviewSection({
         return <VsScreenCard id="photocard-export" data={data} />;
       case "loot":
         return <LootDropCard id="photocard-export" data={data} />;
+      case "tube":
+        return <TubeCard id="photocard-export" data={data} />;
+      case "clown":
+        return <ClownCard id="photocard-export" data={data} />;
+      case "chat":
+        return <ChatCard id="photocard-export" data={data} />;
+      case "quote":
+        return <QuoteCard id="photocard-export" data={data} />;
+      case "stream":
+        return <StreamCard id="photocard-export" data={data} />;
+      case "credit":
+        return <CreditCard id="photocard-export" data={data} />;
+      case "captcha":
+        return <CaptchaCard id="photocard-export" data={data} />;
+      case "wrapped":
+        return <WrappedCard id="photocard-export" data={data} />;
+      case "billboard":
+        return <BillboardCard id="photocard-export" data={data} />;
+      case "alert":
+        return <AlertCard id="photocard-export" data={data} />;
+      case "notes":
+        return <NotesCard id="photocard-export" data={data} />;
+      case "aura":
+        return <AuraCard id="photocard-export" data={data} />;
+      case "impact":
+        return <ImpactCard id="photocard-export" data={data} />;
+      case "terminal":
+        return <TerminalCard id="photocard-export" data={data} />;
+      case "paper":
+        return <PaperCard id="photocard-export" data={data} />;
+      case "neon":
+        return <NeonCard id="photocard-export" data={data} />;
+      case "board":
+        return <BoardCard id="photocard-export" data={data} />;
+      case "cinema":
+        return <CinemaCard id="photocard-export" data={data} />;
+      case "sign":
+        return <SignCard id="photocard-export" data={data} />;
+      case "lock":
+        return <LockScreenCard id="photocard-export" data={data} />;
       default:
         return <CleanViralCard id="photocard-export" data={data} />;
     }
