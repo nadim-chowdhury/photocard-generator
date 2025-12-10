@@ -258,6 +258,106 @@ export const generateCaptions = (
       `Check your notifs. 🔔\n\n${content}\n\n${hashtags}`,
       `Missed call: Reality. 📱\n\n${content}\n\n${hashtags}`,
     ];
+  } else if (template === "newspaper") {
+    return [
+      `EXTRA! EXTRA! Read all about it! 📰\n\n${content}\n\n${hashtags}`,
+      `Breaking News: The audacity is at an all-time high. 🗞️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "tabloid") {
+    return [
+      `EXCLUSIVE: Caught in 4K! 📸\n\n${content}\n\n${hashtags}`,
+      `You won't believe what happened! 😱\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "magazine") {
+    return [
+      `Cover Star material. ✨\n\n${content}\n\n${hashtags}`,
+      `Issue #1: The Audacity. 📖\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "journal") {
+    return [
+      `Study finds 100% of people agree. 📊\n\n${content}\n\n${hashtags}`,
+      `Peer reviewed and confirmed. 🔬\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "wanted_poster") {
+    return [
+      `WANTED: For crimes against logic. 🤠\n\n${content}\n\n${hashtags}`,
+      `Reward: $0.01. 💰\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "mugshot") {
+    return [
+      `Guilty as charged. 🚔\n\n${content}\n\n${hashtags}`,
+      `Lock me up. ⛓️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "paparazzi") {
+    return [
+      `Spotted in the wild! 🔭\n\n${content}\n\n${hashtags}`,
+      `No privacy in this house. 📸\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "reality") {
+    return [
+      `At this point I'm just tired. 🍷\n\n${content}\n\n${hashtags}`,
+      `I didn't come here to make friends. 💅\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "talk") {
+    return [
+      `Tonight's guest needs no introduction. 🎙️\n\n${content}\n\n${hashtags}`,
+      `Thanks for having me. 🤝\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "weather") {
+    return [
+      `Forecast: 100% chance of drama. ⛈️\n\n${content}\n\n${hashtags}`,
+      `It's getting heated out here. 🌡️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "review") {
+    return [
+      `1 Star. Would not recommend. ⭐\n\n${content}\n\n${hashtags}`,
+      `Customer service was terrible. 📉\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "reddit") {
+    return [
+      `AITA? Yes. 🚩\n\n${content}\n\n${hashtags}`,
+      `Edit: Thanks for the gold kind stranger! 🏅\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "stock") {
+    return [
+      `Stonks only go down. 📉\n\n${content}\n\n${hashtags}`,
+      `Buy the dip? No. 💸\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "scoreboard") {
+    return [
+      `It's a blowout! 🏈\n\n${content}\n\n${hashtags}`,
+      `Scoreboard. 🏟️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "horoscope") {
+    return [
+      `Mercury is in retrograde. 🔮\n\n${content}\n\n${hashtags}`,
+      `The stars say: delete this. ✨\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "podcast") {
+    return [
+      `New episode out now! 🎙️\n\n${content}\n\n${hashtags}`,
+      `Link in bio. 🎧\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "ticket") {
+    return [
+      `Admit One to the show. 🎟️\n\n${content}\n\n${hashtags}`,
+      `Front row seats. 🍿\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "certificate") {
+    return [
+      `Certified Classic. 🏆\n\n${content}\n\n${hashtags}`,
+      `Award for participation. 🎖️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "topten") {
+    return [
+      `Number 1 will shock you! 🔟\n\n${content}\n\n${hashtags}`,
+      `Trending now. 📈\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "auction") {
+    return [
+      `Going once, going twice... 🔨\n\n${content}\n\n${hashtags}`,
+      `SOLD to the lowest bidder! 💸\n\n${content}\n\n${hashtags}`,
+    ];
   } else {
     // Clean/Viral
     return [

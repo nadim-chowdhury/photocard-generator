@@ -217,7 +217,29 @@ export default function ControlPanel({
               News & Media
             </div>
             <div className="grid grid-cols-3 gap-2">
-              {["news", "newspaper"].map((t) => (
+              {[
+                "news",
+                "newspaper",
+                "tabloid",
+                "magazine",
+                "journal",
+                "wanted_poster",
+                "mugshot",
+                "paparazzi",
+                "reality",
+                "talk",
+                "weather",
+                "review",
+                "reddit",
+                "stock",
+                "scoreboard",
+                "horoscope",
+                "podcast",
+                "ticket",
+                "certificate",
+                "topten",
+                "auction",
+              ].map((t) => (
                 <TemplateButton
                   key={t}
                   id={t}

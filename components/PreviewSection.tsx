@@ -13,11 +13,11 @@ import { WantedPosterCard } from "./templates/WantedPosterCard";
 import { MusicPlayerCard } from "./templates/MusicPlayerCard";
 import { AchievementCard } from "./templates/AchievementCard";
 import { NotificationCard } from "./templates/NotificationCard";
-import { NewspaperCard } from "./templates/NewspaperCard";
+
 import { DefinitionCard } from "./templates/DefinitionCard";
 import { ErrorWindowCard } from "./templates/ErrorWindowCard";
 import { FactCheckCard } from "./templates/FactCheckCard";
-import { ReviewCard } from "./templates/ReviewCard";
+
 import { SearchCard } from "./templates/SearchCard";
 import { ReceiptCard } from "./templates/ReceiptCard";
 import { NutritionCard } from "./templates/NutritionCard";
@@ -54,6 +54,26 @@ import { BoardCard } from "./templates/BoardCard";
 import { CinemaCard } from "./templates/CinemaCard";
 import { SignCard } from "./templates/SignCard";
 import { LockScreenCard } from "./templates/LockScreenCard";
+import { NewspaperCard } from "./templates/NewspaperCard";
+import { TabloidCard } from "./templates/TabloidCard";
+import { MagazineCard } from "./templates/MagazineCard";
+import { JournalCard } from "./templates/JournalCard";
+import { WantedCard } from "./templates/WantedCard";
+import { MugshotCard } from "./templates/MugshotCard";
+import { PaparazziCard } from "./templates/PaparazziCard";
+import { RealityTVCard } from "./templates/RealityTVCard";
+import { TalkShowCard } from "./templates/TalkShowCard";
+import { WeatherCard } from "./templates/WeatherCard";
+import { ReviewCard } from "./templates/ReviewCard";
+import { RedditCard } from "./templates/RedditCard";
+import { StockCard } from "./templates/StockCard";
+import { ScoreboardCard } from "./templates/ScoreboardCard";
+import { HoroscopeCard } from "./templates/HoroscopeCard";
+import { PodcastCard } from "./templates/PodcastCard";
+import { TicketCard } from "./templates/TicketCard";
+import { CertificateCard } from "./templates/CertificateCard";
+import { TopTenCard } from "./templates/TopTenCard";
+import { AuctionCard } from "./templates/AuctionCard";
 import { generateCaptions } from "@/utils/captionGenerator";
 
 interface PreviewSectionProps {
@@ -116,16 +136,14 @@ export default function PreviewSection({
         return <AchievementCard id="photocard-export" data={data} />;
       case "notification":
         return <NotificationCard id="photocard-export" data={data} />;
-      case "newspaper":
-        return <NewspaperCard id="photocard-export" data={data} />;
+
       case "definition":
         return <DefinitionCard id="photocard-export" data={data} />;
       case "error":
         return <ErrorWindowCard id="photocard-export" data={data} />;
       case "fact":
         return <FactCheckCard id="photocard-export" data={data} />;
-      case "review":
-        return <ReviewCard id="photocard-export" data={data} />;
+
       case "search":
         return <SearchCard id="photocard-export" data={data} />;
       case "receipt":
@@ -198,6 +216,46 @@ export default function PreviewSection({
         return <SignCard id="photocard-export" data={data} />;
       case "lock":
         return <LockScreenCard id="photocard-export" data={data} />;
+      case "newspaper":
+        return <NewspaperCard id="photocard-export" data={data} />;
+      case "tabloid":
+        return <TabloidCard id="photocard-export" data={data} />;
+      case "magazine":
+        return <MagazineCard id="photocard-export" data={data} />;
+      case "journal":
+        return <JournalCard id="photocard-export" data={data} />;
+      case "wanted_poster":
+        return <WantedCard id="photocard-export" data={data} />;
+      case "mugshot":
+        return <MugshotCard id="photocard-export" data={data} />;
+      case "paparazzi":
+        return <PaparazziCard id="photocard-export" data={data} />;
+      case "reality":
+        return <RealityTVCard id="photocard-export" data={data} />;
+      case "talk":
+        return <TalkShowCard id="photocard-export" data={data} />;
+      case "weather":
+        return <WeatherCard id="photocard-export" data={data} />;
+      case "review":
+        return <ReviewCard id="photocard-export" data={data} />;
+      case "reddit":
+        return <RedditCard id="photocard-export" data={data} />;
+      case "stock":
+        return <StockCard id="photocard-export" data={data} />;
+      case "scoreboard":
+        return <ScoreboardCard id="photocard-export" data={data} />;
+      case "horoscope":
+        return <HoroscopeCard id="photocard-export" data={data} />;
+      case "podcast":
+        return <PodcastCard id="photocard-export" data={data} />;
+      case "ticket":
+        return <TicketCard id="photocard-export" data={data} />;
+      case "certificate":
+        return <CertificateCard id="photocard-export" data={data} />;
+      case "topten":
+        return <TopTenCard id="photocard-export" data={data} />;
+      case "auction":
+        return <AuctionCard id="photocard-export" data={data} />;
       default:
         return <CleanViralCard id="photocard-export" data={data} />;
     }
