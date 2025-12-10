@@ -14,6 +14,26 @@ import { MusicPlayerCard } from "./templates/MusicPlayerCard";
 import { AchievementCard } from "./templates/AchievementCard";
 import { NotificationCard } from "./templates/NotificationCard";
 import { NewspaperCard } from "./templates/NewspaperCard";
+import { DefinitionCard } from "./templates/DefinitionCard";
+import { ErrorWindowCard } from "./templates/ErrorWindowCard";
+import { FactCheckCard } from "./templates/FactCheckCard";
+import { ReviewCard } from "./templates/ReviewCard";
+import { SearchCard } from "./templates/SearchCard";
+import { ReceiptCard } from "./templates/ReceiptCard";
+import { NutritionCard } from "./templates/NutritionCard";
+import { WarningCard } from "./templates/WarningCard";
+import { WikiCard } from "./templates/WikiCard";
+import { ChartCard } from "./templates/ChartCard";
+import { FpsHudCard } from "./templates/FpsHudCard";
+import { VisualNovelCard } from "./templates/VisualNovelCard";
+import { TcgCard } from "./templates/TcgCard";
+import { ItemShopCard } from "./templates/ItemShopCard";
+import { CharSelectCard } from "./templates/CharSelectCard";
+import { QuestLogCard } from "./templates/QuestLogCard";
+import { InventoryCard } from "./templates/InventoryCard";
+import { RtsTooltipCard } from "./templates/RtsTooltipCard";
+import { VsScreenCard } from "./templates/VsScreenCard";
+import { LootDropCard } from "./templates/LootDropCard";
 import { generateCaptions } from "@/utils/captionGenerator";
 
 interface PreviewSectionProps {
@@ -78,6 +98,46 @@ export default function PreviewSection({
         return <NotificationCard id="photocard-export" data={data} />;
       case "newspaper":
         return <NewspaperCard id="photocard-export" data={data} />;
+      case "definition":
+        return <DefinitionCard id="photocard-export" data={data} />;
+      case "error":
+        return <ErrorWindowCard id="photocard-export" data={data} />;
+      case "fact":
+        return <FactCheckCard id="photocard-export" data={data} />;
+      case "review":
+        return <ReviewCard id="photocard-export" data={data} />;
+      case "search":
+        return <SearchCard id="photocard-export" data={data} />;
+      case "receipt":
+        return <ReceiptCard id="photocard-export" data={data} />;
+      case "nutrition":
+        return <NutritionCard id="photocard-export" data={data} />;
+      case "warning":
+        return <WarningCard id="photocard-export" data={data} />;
+      case "wiki":
+        return <WikiCard id="photocard-export" data={data} />;
+      case "chart":
+        return <ChartCard id="photocard-export" data={data} />;
+      case "fps":
+        return <FpsHudCard id="photocard-export" data={data} />;
+      case "visualnovel":
+        return <VisualNovelCard id="photocard-export" data={data} />;
+      case "tcg":
+        return <TcgCard id="photocard-export" data={data} />;
+      case "shop":
+        return <ItemShopCard id="photocard-export" data={data} />;
+      case "fighter":
+        return <CharSelectCard id="photocard-export" data={data} />;
+      case "quest":
+        return <QuestLogCard id="photocard-export" data={data} />;
+      case "inventory":
+        return <InventoryCard id="photocard-export" data={data} />;
+      case "rts":
+        return <RtsTooltipCard id="photocard-export" data={data} />;
+      case "vs":
+        return <VsScreenCard id="photocard-export" data={data} />;
+      case "loot":
+        return <LootDropCard id="photocard-export" data={data} />;
       default:
         return <CleanViralCard id="photocard-export" data={data} />;
     }

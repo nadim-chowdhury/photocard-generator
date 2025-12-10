@@ -58,6 +58,106 @@ export const generateCaptions = (
       `Front page news right here. 🗞️\n\n${content}\n\n${hashtags}`,
       `The Daily Meme: "It's true because I printed it." 🖊️\n\n${content}\n\n${hashtags}`,
     ];
+  } else if (template === "definition") {
+    return [
+      `New word added to the dictionary. 📖\n\n${content}\n\n${hashtags}`,
+      `Educate yourself. 🤓\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "error") {
+    return [
+      `TASK FAILED SUCCESSFULLY. 💿\n\n${content}\n\n${hashtags}`,
+      `System Crash Imminent. 💻\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "fact") {
+    return [
+      `🚨 COMMUNITY NOTE ADDED.\n\n${content}\n\n${hashtags}`,
+      `The council has decided this is cap. 🧢\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "review") {
+    return [
+      `⭐ 1/5 Stars. Would not recommend.\n\n${content}\n\n${hashtags}`,
+      `I'd like to speak to the manager. 🗣️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "search") {
+    return [
+      `🔍 Search Results: Zero logic found.\n\n${content}\n\n${hashtags}`,
+      `Did you mean: Clownery? 🤡\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "receipt") {
+    return [
+      `🧾 Here are the receipts.\n\n${content}\n\n${hashtags}`,
+      `Caught in 4k. No refunds.\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "nutrition") {
+    return [
+      `⚠️ WARNING: Contains 100% Artificial Intelligence.\n\n${content}\n\n${hashtags}`,
+      `Nutritional facts: 0g substance.\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "warning") {
+    return [
+      `☣️ BIOHAZARD DETECTED.\n\n${content}\n\n${hashtags}`,
+      `Proceed with caution. 🚧\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "wiki") {
+    return [
+      `[Citation Needed] 📚\n\n${content}\n\n${hashtags}`,
+      `The free encyclopedia that anyone can edit. 🌍\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "chart") {
+    return [
+      `📈 The data doesn't lie.\n\n${content}\n\n${hashtags}`,
+      `Source: Trust me bro.\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "fps") {
+    return [
+      `360 No-scoped. 🎯\n\n${content}\n\n${hashtags}`,
+      `Get good, scrub. 💀\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "visualnovel") {
+    return [
+      `Senpai noticed you... and is disappointed. 🌸\n\n${content}\n\n${hashtags}`,
+      `Dating Sim Bad Ending speedrun. 💔\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "tcg") {
+    return [
+      `I activate my Trap Card! 🃏\n\n${content}\n\n${hashtags}`,
+      `Rare Holo Drop. ✨\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "shop") {
+    return [
+      `Khajiit has wares, if you have coin. 🐱\n\n${content}\n\n${hashtags}`,
+      `No refunds on this opinion. 💰\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "fighter") {
+    return [
+      `Choose your fighter! 🥊\n\n${content}\n\n${hashtags}`,
+      `Ready? Fight! ⚔️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "quest") {
+    return [
+      `Quest Failed: Touch Grass. 🌿\n\n${content}\n\n${hashtags}`,
+      `New Objective: Cope. 📜\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "inventory") {
+    return [
+      `Inventory Full: Too much audacity. 🎒\n\n${content}\n\n${hashtags}`,
+      `Item Stats: -100 Intelligence. 📉\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "rts") {
+    return [
+      `You require more vespene gas. ⛽\n\n${content}\n\n${hashtags}`,
+      `Unit Stats: 0 Defense, All Attack. 🛡️\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "vs") {
+    return [
+      `A subtle battle of wits. ⚔️\n\n${content}\n\n${hashtags}`,
+      `Top 10 Anime Betrayals. 📺\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "loot") {
+    return [
+      `Orange Legendary Drop! 🧡\n\n${content}\n\n${hashtags}`,
+      `Best loot in the dungeon. 🗝️\n\n${content}\n\n${hashtags}`,
+    ];
   } else {
     // Clean/Viral
     return [

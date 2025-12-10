@@ -11,6 +11,29 @@ interface ControlPanelProps {
   setActiveTemplate: (id: string) => void;
 }
 
+const TemplateButton = ({
+  id,
+  active,
+  onClick,
+}: {
+  id: string;
+  active: string;
+  onClick: (id: string) => void;
+}) => (
+  <button
+    onClick={() => onClick(id)}
+    className={`p-3 text-xs font-medium rounded-lg border-2 transition-all truncate
+      ${
+        active === id
+          ? "border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-900/30"
+          : "border-zinc-200 hover:border-zinc-300 dark:border-zinc-700 dark:hover:border-zinc-600"
+      }
+    `}
+  >
+    {id.toUpperCase()}
+  </button>
+);
+
 export default function ControlPanel({
   user,
   setUser,
@@ -42,38 +65,112 @@ export default function ControlPanel({
 
   return (
     <div className="space-y-8 p-6 bg-zinc-50 dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800">
-      {/* Template Selector */}
+      {/* Template Selector with Categories */}
       <div className="space-y-4">
         <h3 className="text-sm font-semibold uppercase tracking-wider text-zinc-500">
           Select Template
         </h3>
-        <div className="grid grid-cols-3 gap-2">
-          {[
-            "toxic",
-            "galaxy",
-            "clean",
-            "news",
-            "rpg",
-            "wanted",
-            "music",
-            "achievement",
-            "notification",
-            "newspaper",
-          ].map((t) => (
-            <button
-              key={t}
-              onClick={() => setActiveTemplate(t)}
-              className={`p-3 text-xs font-medium rounded-lg border-2 transition-all
-                ${
-                  activeTemplate === t
-                    ? "border-blue-500 bg-blue-50 text-blue-700 dark:bg-blue-900/30"
-                    : "border-zinc-200 hover:border-zinc-300 dark:border-zinc-700 dark:hover:border-zinc-600"
-                }
-              `}
-            >
-              {t.toUpperCase()}
-            </button>
-          ))}
+
+        {/* Categories: Viral, News, Sarcasm, Gaming */}
+        <div className="flex flex-col gap-4">
+          {/* Viral */}
+          <div>
+            <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
+              Viral & Social
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                "toxic",
+                "galaxy",
+                "clean",
+                "wanted",
+                "music",
+                "notification",
+              ].map((t) => (
+                <TemplateButton
+                  key={t}
+                  id={t}
+                  active={activeTemplate}
+                  onClick={setActiveTemplate}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Sarcasm */}
+          <div>
+            <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
+              High IQ Sarcasm
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                "definition",
+                "error",
+                "fact",
+                "review",
+                "search",
+                "receipt",
+                "nutrition",
+                "warning",
+                "wiki",
+                "chart",
+              ].map((t) => (
+                <TemplateButton
+                  key={t}
+                  id={t}
+                  active={activeTemplate}
+                  onClick={setActiveTemplate}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Gaming */}
+          <div>
+            <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
+              Gaming Collection
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {[
+                "rpg",
+                "achievement",
+                "fps",
+                "visualnovel",
+                "tcg",
+                "shop",
+                "fighter",
+                "quest",
+                "inventory",
+                "rts",
+                "vs",
+                "loot",
+              ].map((t) => (
+                <TemplateButton
+                  key={t}
+                  id={t}
+                  active={activeTemplate}
+                  onClick={setActiveTemplate}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* News */}
+          <div>
+            <div className="text-xs font-bold text-zinc-400 mb-2 uppercase tracking-tight">
+              News & Media
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {["news", "newspaper"].map((t) => (
+                <TemplateButton
+                  key={t}
+                  id={t}
+                  active={activeTemplate}
+                  onClick={setActiveTemplate}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
