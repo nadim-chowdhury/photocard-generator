@@ -48,7 +48,18 @@ export default function ControlPanel({
           Select Template
         </h3>
         <div className="grid grid-cols-3 gap-2">
-          {["toxic", "galaxy", "clean", "news", "rpg"].map((t) => (
+          {[
+            "toxic",
+            "galaxy",
+            "clean",
+            "news",
+            "rpg",
+            "wanted",
+            "music",
+            "achievement",
+            "notification",
+            "newspaper",
+          ].map((t) => (
             <button
               key={t}
               onClick={() => setActiveTemplate(t)}

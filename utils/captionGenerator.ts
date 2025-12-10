@@ -28,6 +28,36 @@ export const generateCaptions = (
       `A wild hot take appeared! It's super effective! 👾\n\n${content}\n\n${hashtags}`,
       `Quest Updated: Survival Mode Activated 🛡️\n\n${content}\n\n#rpg #pixelart ${hashtags}`,
     ];
+  } else if (template === "wanted") {
+    return [
+      `WANTED: CAUGHT IN 4K 📸\n\n${content}\n\n${hashtags}`,
+      `REWARD $1M for anyone who can explain this behavior. 🤠\n\n${content}\n\n${hashtags}`,
+      `OUTLAW ACTIVITY DETECTED. 🌵\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "music") {
+    return [
+      `Now Playing: My honest feelings 🎵\n\n${content}\n\n${hashtags}`,
+      `This track has been on repeat all day. 🎧\n\n${content}\n\n${hashtags}`,
+      `Vibe check passed. ✅\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "achievement") {
+    return [
+      `🏆 ACHIEVEMENT UNLOCKED: Said the Quiet Part Out Loud\n\n${content}\n\n${hashtags}`,
+      `Gamerscore +1000 for this take. 🎮\n\n${content}\n\n${hashtags}`,
+      `New High Score Detected. 🌟\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "notification") {
+    return [
+      `🔔 NEW MESSAGE: You need to see this.\n\n${content}\n\n${hashtags}`,
+      `POV: Your phone when I post. 📱\n\n${content}\n\n${hashtags}`,
+      `Missed Call from: THE TRUTH 📞\n\n${content}\n\n${hashtags}`,
+    ];
+  } else if (template === "newspaper") {
+    return [
+      `📰 EXTRA! EXTRA! Read all about it!\n\n${content}\n\n${hashtags}`,
+      `Front page news right here. 🗞️\n\n${content}\n\n${hashtags}`,
+      `The Daily Meme: "It's true because I printed it." 🖊️\n\n${content}\n\n${hashtags}`,
+    ];
   } else {
     // Clean/Viral
     return [

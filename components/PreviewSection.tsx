@@ -9,6 +9,11 @@ import { GalaxyBrainCard } from "./templates/GalaxyBrainCard";
 import { CleanViralCard } from "./templates/CleanViralCard";
 import { BreakingNewsCard } from "./templates/BreakingNewsCard";
 import { PixelRpgCard } from "./templates/PixelRpgCard";
+import { WantedPosterCard } from "./templates/WantedPosterCard";
+import { MusicPlayerCard } from "./templates/MusicPlayerCard";
+import { AchievementCard } from "./templates/AchievementCard";
+import { NotificationCard } from "./templates/NotificationCard";
+import { NewspaperCard } from "./templates/NewspaperCard";
 import { generateCaptions } from "@/utils/captionGenerator";
 
 interface PreviewSectionProps {
@@ -63,6 +68,16 @@ export default function PreviewSection({
         return <BreakingNewsCard id="photocard-export" data={data} />;
       case "rpg":
         return <PixelRpgCard id="photocard-export" data={data} />;
+      case "wanted":
+        return <WantedPosterCard id="photocard-export" data={data} />;
+      case "music":
+        return <MusicPlayerCard id="photocard-export" data={data} />;
+      case "achievement":
+        return <AchievementCard id="photocard-export" data={data} />;
+      case "notification":
+        return <NotificationCard id="photocard-export" data={data} />;
+      case "newspaper":
+        return <NewspaperCard id="photocard-export" data={data} />;
       default:
         return <CleanViralCard id="photocard-export" data={data} />;
     }
